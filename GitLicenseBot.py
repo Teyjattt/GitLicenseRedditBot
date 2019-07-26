@@ -9,6 +9,7 @@ subreddit = reddit.subreddit(redditsToFollow)
 headers = {'Authorization': 'Token 123456789012345678901234567890'}   #for github api
 
 def main():
+    updateOptoutFile()
     with open('optout.json') as optoutFile:
         optoutList = json.load(optoutFile)
     
