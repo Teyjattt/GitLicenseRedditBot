@@ -68,11 +68,11 @@ def replyLicenseMsg(submission, messageType):
     if messageType == 'nolicense':
         replyTemplate = "Good day u/" + str(submission.author) + ",\n\r   The github repository you linked does not have a license. If you need help\
         picking out a license, might I suggest https://choosealicense.com. \
-        \n\r\n\r^This ^is ^a ^bot, ^to ^stop ^receiving ^these ^automated ^replies, ^please ^send ^me ^a ^message ^to \
+        \n\r\n\r^(This is a bot, to stop receiving these automated replies, please send me a message to) \
         [^optout](https://www.reddit.com/message/compose?to=TeyjatttsBots&subject=optout&message=Please leave subject as optout and send this message as is.)^."
     elif messageType == 'private':
         replyTemplate = "Good day u/" + str(submission.author) + ",\n\r   The github repository you linked is either private or does not exist.\
-        \n\r\n\r^This ^is ^a ^bot, ^to ^stop ^receiving ^these ^automated ^replies, ^please ^send ^me ^a ^message ^to \
+        \n\r\n\r^(This is a bot, to stop receiving these automated replies, please send me a message to) \
         [^optout](https://www.reddit.com/message/compose?to=TeyjatttsBots&subject=!optout&message=!optout)^."
     submission.reply(replyTemplate)
 
